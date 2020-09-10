@@ -84,13 +84,13 @@ html {
     &-title {
         margin-bottom: 10px;
         font-size: 48px;
-        font-weight: 700;
+        @include f700;
         line-height: 72px;
     }
     &-text {
         margin-bottom: 50px;
         font-size: 20px;
-        font-weight: 500;
+        @include f500;
         line-height: 30px;
     }
     &-form {
@@ -105,7 +105,7 @@ html {
             height: 56px;
             border: none;
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
             padding-left: 25px;
             padding-right: 60px;
             &::placeholder {
@@ -167,7 +167,7 @@ html {
         padding: 10px 30px;
         align-items: center;
         min-height: 90px;
-        font-weight: 500;
+        @include f500;
         border-bottom: 1px solid #ebeeef;
     }
     &-name {
@@ -175,7 +175,7 @@ html {
     }
     &-title {
         color: $bg;
-        font-weight: 500;
+        @include f500;
         font-size: 18px;
         line-height: normal;
     }
@@ -187,7 +187,7 @@ html {
     &-price {
         font-size: 20px;
         color: $bg;
-        font-weight: 700;
+        @include f700;
     }
     &-info {
         display: flex;
@@ -211,7 +211,7 @@ html {
         }
         span {
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
             max-width: 245px;
         }
     }
@@ -278,3 +278,62 @@ html {
 }
 
 //end product-slider
+//start adventages
+.adventages {
+    background-color: $bg;
+    padding: 110px 0;
+}
+
+.adventages__title {
+    color: #fff;
+}
+
+.adventages__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventages__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0px 15px;
+    &-images {
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        margin: 0 auto 30px;
+        transition: all .5s;
+        .ico-1 {
+            transform: translate(17%);
+        }
+    }
+    &:hover {
+        .adventages__item-images {
+            background-color: $green;
+            path {
+                fill: #fff;
+            }
+        }
+        .adventages__item-title {
+            color: $green;
+        }
+    }
+    &-title {
+        color: #fff;
+        margin-bottom: 25px;
+        @include f500;
+        font-size: 25px;
+        transition: all .5s;
+    }
+    &-text {
+        font-size: 15px;
+        color: $dgrey;
+    }
+}
+
+//end adventages
