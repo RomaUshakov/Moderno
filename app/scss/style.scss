@@ -374,3 +374,35 @@ html {
 }
 
 //end autors
+//start tutorial
+.tutorial {
+    padding: 60px 0px 120px;
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        max-width: 370px;
+        width: 100%;
+    }
+}
+
+.tutorial__item {
+    padding: 0 15px;
+    &-title {
+        font-size: 24px;
+        background-color: #f8f8f8;
+        text-align: center;
+        @include f700;
+        padding: 30px 10px;
+        color: $bg;
+    }
+    &-images {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 270px;
+    }
+}
+
+//end tutorial
